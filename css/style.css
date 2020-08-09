@@ -1,0 +1,16 @@
+body {
+  font-family: 'Karla', sans-serif;
+  background-color: #A7A2A9;
+}
+.ddd {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: .125rem;
+}
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
