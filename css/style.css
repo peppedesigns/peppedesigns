@@ -8,42 +8,61 @@ body {
   min-height: 100vh;
   justify-content: center;
   text-align: center;
-  letter-spacing: .125rem;
+  letter-spacing: .125rem;  
 }
 /*a {
   color: #FFFFFF;
   text-decoration: none;
 }*/
-
+ a {
+    background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+    background-repeat: no-repeat;
+    background-size: 0px 2px;
+    background-position: 0px 95%;
+    transition: background 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+    padding: 0.1% 0px;
+  }
+  
 a {
-  position: relative;
-  /*font-weight: 600;*/
-  text-decoration: none;
-  color: white;
-  opacity: .7;
-  transition: opacity 0.3s cubic-bezier(0.51, 0.92, 0.24, 1);
+  color: #FFFFFF;
+  text-decoration: none; 
+  /*font-size: 31px;*/
 }
-a::after {
-  --scale: 0;
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 100%;
-  height: 2px;
-  background: linear-gradient(135deg, #A40606, #F94E4E);
-  -webkit-transform: scaleX(var(--scale));
-          transform: scaleX(var(--scale));
-  -webkit-transform-origin: var(--x) 50%;
-          transform-origin: var(--x) 50%;
-  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.51, 0.92, 0.24, 1);
-  transition: -webkit-transform 0.3s cubic-bezier(0.51, 0.92, 0.24, 1);
-  transition: transform 0.3s cubic-bezier(0.51, 0.92, 0.24, 1);
-  transition: transform 0.3s cubic-bezier(0.51, 0.92, 0.24, 1), -webkit-transform 0.3s cubic-bezier(0.51, 0.92, 0.24, 1);
+
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+  .ddd {
+    font-size: 1rem;
+  }
+  a:hover {
+    background-size: 100% 2px;
+  }
+ 
 }
-a:hover {
-  opacity: 1;
+
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .ddd {
+    font-size: 2rem;
+  }
+  a:hover {
+    background-size: 100% 3px;
+  }
 }
-a:hover::after {
-  --scale: 1;
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+  .ddd {
+    font-size: 3rem;
+  }
+  a:hover {
+    background-size: 100% 4px;
+  }
 }
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
