@@ -10,23 +10,18 @@ body {
   text-align: center;
   letter-spacing: .125rem;  
 }
-/*a {
-  color: #FFFFFF;
-  text-decoration: none;
-}*/
  a {
-    background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
-    background-repeat: no-repeat;
-    background-size: 0px 2px;
-    background-position: 0px 95%;
-    transition: background 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
-    padding: 0.1% 0px;
-  }
+  background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+  background-repeat: no-repeat;
+  background-size: 0px 2px;
+  background-position: 0px 95%;
+  transition: background 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+  padding: 0.1% 0px;
+}
   
 a {
   color: #FFFFFF;
   text-decoration: none; 
-  /*font-size: 31px;*/
 }
 
 
